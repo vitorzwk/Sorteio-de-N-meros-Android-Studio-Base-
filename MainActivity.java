@@ -1,4 +1,5 @@
 package com.sorteioNumeros.myapplication;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -28,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void sortearNumero(View view){
 
-        int numero = new Random().nextInt(101);
+        int numero = new Random().nextInt(100) + 1;
 
         TextView texto = findViewById(R.id.Resultado);
 
-        texto.setText(""+numero);
+        texto.setText(String.valueOf(numero));
     }
 }
