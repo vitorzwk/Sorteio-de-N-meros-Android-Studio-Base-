@@ -9,8 +9,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/calculadora"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/calculadora"
+        android:contentDescription="Calculadora"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
 
+    <TextView
         android:id="@+id/TituloApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,10 +28,10 @@
         android:textColor="#FFFFFF"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculadora"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/button"
@@ -38,7 +48,6 @@
         android:layout_marginTop="40dp"/>
 
     <TextView
-
         android:id="@+id/Resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,4 +59,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="60dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
